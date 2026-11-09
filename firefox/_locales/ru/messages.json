@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "Gust HTML Tag Replacer",
+    "description": "Название расширения"
+  },
+  "extDesc": {
+    "message": "Замена HTML тегов в выделенном тексте по настраиваемым правилам. Поддержка всех регистров и базы правил.",
+    "description": "Описание расширения"
+  },
+  "menuTitle": {
+    "message": "Gust: Заменить теги в выделенном",
+    "description": "Контекстное меню"
+  },
+  "cmdDesc": {
+    "message": "Заменить теги в выделенном тексте",
+    "description": "Описание горячей клавиши"
+  },
+  "popupTitle": { "message": "Gust HTML Tag Replacer" },
+  "howToUse": { "message": "Как использовать:" },
+  "howToStep1": { "message": "1. Выделите HTML-код на странице." },
+  "howToStep2": { "message": "2. Нажмите" },
+  "howToStep2b": { "message": "или ПКМ → «Заменить теги в выделенном»." },
+  "howToStep3": { "message": "3. Хоткей меняется в" },
+  "btnAddRule": { "message": "+ Новое правило" },
+  "btnOpenLibrary": { "message": "📚 База правил" },
+  "btnSave": { "message": "Сохранить" },
+  "btnSaved": { "message": "Сохранено!" },
+  "emptyActiveRules": { "message": "Пока нет активных правил.<br>Добавьте из базы или создайте новое." },
+  "emptyLibrary": { "message": "База пуста" },
+  "placeholderTag": { "message": "Тег (например <strong>)" },
+  "placeholderReplOpen": { "message": "Заменить открывающий" },
+  "placeholderReplClose": { "message": "Заменить закрывающий (авто, если пусто)" },
+  "labelAllCases": { "message": "все регистры" },
+  "titleToggleClose": { "message": "Показать/скрыть замену закрывающего" },
+  "titleDeleteActive": { "message": "Убрать из активных (в базе останется)" },
+  "titleDeleteLibrary": { "message": "Удалить навсегда из базы" },
+  "titleAllCasesIcon": { "message": "все регистры" },
+  "libraryHeader": { "message": "Все сохранённые правила" },
+  "notifySelectFragment": { "message": "Gust: Выдели фрагмент с HTML-кодом" },
+  "notifySuccess": { "message": "Gust: Замена выполнена!" },
+  "notifySuccessTextarea": { "message": "Gust: Замена выполнена в найденном textarea!" },
+  "notifyClickHtml": { "message": "Gust: Кликни в поле с HTML-кодом и попробуй снова" },
+  "notifyClickEditor": { "message": "Gust: Кликни в редактор и выдели HTML-код" },
+  "btnDonate": { "message": "☕ Поддержать разработчика" },
+  "titleDonate": { "message": "Поддержать проект" }
+}

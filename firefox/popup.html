@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 460px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+      font-size: 18px;
+    }
+    .rule {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      padding: 6px;
+    }
+    .rule input[type="text"] {
+      flex: 1;
+      min-width: 100px;
+      padding: 6px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+    .rule label {
+      font-size: 11px;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      white-space: nowrap;
+    }
+    .rule .close-repl {
+      flex-basis: 100%;
+      display: none;
+    }
+    .rule .close-repl.visible { display: flex; }
+    button {
+      padding: 8px 15px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 5px;
+      font-size: 13px;
+    }
+    button:hover { background: #45a049; }
+    button.secondary { background: #607D8B; }
+    button.secondary:hover { background: #455A64; }
+    button.delete {
+      background: #f44336;
+      padding: 6px 10px;
+    }
+    button.delete:hover { background: #da190b; }
+    button.toggle {
+      background: #FF9800;
+      padding: 6px 10px;
+    }
+    button.toggle:hover { background: #e68900; }
+    #addRule { background: #2196F3; width: 100%; margin-top: 10px; }
+    #addRule:hover { background: #0b7dda; }
+    #openLibrary { background: #607D8B; width: 100%; margin-top: 10px; }
+    #save { background: #4CAF50; width: 100%; margin-top: 10px; }
+    .info {
+      background: #e7f3ff;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: #0066cc;
+      line-height: 1.4;
+    }
+    .empty {
+      color: #888;
+      font-size: 12px;
+      text-align: center;
+      padding: 12px;
+      font-style: italic;
+    }
+    #libraryPanel {
+      display: none;
+      margin-top: 10px;
+      border-top: 2px solid #ddd;
+      padding-top: 10px;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+    #libraryPanel.visible { display: block; }
+    .lib-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 12px;
+    }
+    .lib-item code {
+      background: #f5f5f5;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 11px;
+    }
+    .lib-item button {
+      padding: 3px 8px;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <h2 data-i18n="popupTitle">Gust HTML Tag Replacer</h2>
+
+  <div class="info">
+    <strong data-i18n="howToUse">Как использовать:</strong><br>
+    <span data-i18n="howToStep1">1. Выделите HTML-код на странице.</span><br>
+    <span data-i18n="howToStep2">2. Нажмите</span> <code>Ctrl+Shift+R</code> 
+    <span data-i18n="howToStep2b">или ПКМ → «Заменить теги в выделенном».</span><br>
+    <span data-i18n="howToStep3">3. Хоткей меняется в</span> <code>chrome://extensions/shortcuts</code>
+  </div>
+
+  <div id="rules"></div>
+
+  <button id="addRule" data-i18n="btnAddRule">+ Новое правило</button>
+  <button id="openLibrary" data-i18n="btnOpenLibrary">📚 База правил</button>
+  <button id="save" data-i18n="btnSave">Сохранить</button>
+
+  <div id="libraryPanel">
+    <div style="font-weight:bold;font-size:13px;margin-bottom:8px;" data-i18n="libraryHeader">Все сохранённые правила</div>
+    <div id="libraryList"></div>
+  </div>
+
+  <div style="text-align: center; margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
+    <a href="#" id="donateLink" data-i18n="btnDonate" title="" style="font-size: 12px; color: #888; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">☕ Поддержать разработчика</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

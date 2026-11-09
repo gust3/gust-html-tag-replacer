@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "Gust HTML Tag Replacer",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Replace HTML tags in selected text using customizable rules. Case-insensitive support and rule library.",
+    "description": "Extension description"
+  },
+  "menuTitle": {
+    "message": "Gust: Replace tags in selection",
+    "description": "Context menu"
+  },
+  "cmdDesc": {
+    "message": "Replace tags in selected text",
+    "description": "Shortcut description"
+  },
+  "popupTitle": { "message": "Gust HTML Tag Replacer" },
+  "howToUse": { "message": "How to use:" },
+  "howToStep1": { "message": "1. Select HTML code on the page." },
+  "howToStep2": { "message": "2. Press" },
+  "howToStep2b": { "message": "or right-click → \"Replace tags in selection\"." },
+  "howToStep3": { "message": "3. Change the hotkey in" },
+  "btnAddRule": { "message": "+ New rule" },
+  "btnOpenLibrary": { "message": "📚 Rule library" },
+  "btnSave": { "message": "Save" },
+  "btnSaved": { "message": "Saved!" },
+  "emptyActiveRules": { "message": "No active rules yet.<br>Add from library or create a new one." },
+  "emptyLibrary": { "message": "Library is empty" },
+  "placeholderTag": { "message": "Tag (e.g. <strong>)" },
+  "placeholderReplOpen": { "message": "Replace opening" },
+  "placeholderReplClose": { "message": "Replace closing (auto if empty)" },
+  "labelAllCases": { "message": "all cases" },
+  "titleToggleClose": { "message": "Show/hide closing tag replacement" },
+  "titleDeleteActive": { "message": "Remove from active (stays in library)" },
+  "titleDeleteLibrary": { "message": "Delete permanently from library" },
+  "titleAllCasesIcon": { "message": "all cases" },
+  "libraryHeader": { "message": "All saved rules" },
+  "notifySelectFragment": { "message": "Gust: Select a fragment with HTML code" },
+  "notifySuccess": { "message": "Gust: Replacement done!" },
+  "notifySuccessTextarea": { "message": "Gust: Replacement done in the found textarea!" },
+  "notifyClickHtml": { "message": "Gust: Click into a field with HTML code and try again" },
+  "notifyClickEditor": { "message": "Gust: Click into the editor and select HTML code" },
+  "btnDonate": { "message": "☕ Support the developer" },
+  "titleDonate": { "message": "Support the project" }
+}
